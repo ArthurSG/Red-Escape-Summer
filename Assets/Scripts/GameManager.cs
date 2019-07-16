@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public static LevelManager levelManager;
     public static Fabrique fabrique;
     //public static MovementController movementController;
+
+    public static GenerationProcedurale generationProcedurale;
     
     void Start() 
     {
@@ -20,6 +22,9 @@ public class GameManager : MonoBehaviour
     	levelManager = GetComponent<LevelManager>();
     	fabrique = GetComponent<Fabrique>();
     	//movementController = GetComponent<MovementController>();
+
+        generationProcedurale = GetComponent<GenerationProcedurale>();
+
 
     }
 
