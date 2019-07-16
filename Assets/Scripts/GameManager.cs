@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public static LevelManager levelManager;
     public static Fabrique fabrique;
+    //public static MovementController movementController;
     
     void Start() 
     {
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     	levelManager = GetComponent<LevelManager>();
     	fabrique = GetComponent<Fabrique>();
+    	//movementController = GetComponent<MovementController>();
 
     }
 
