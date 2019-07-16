@@ -26,7 +26,7 @@ public class MovementController : MonoBehaviour
 
     public void Movement (float movementValue)
     {
-        if (tiles[0] != null)
-    	   tiles[0].transform.position = new Vector3 (tiles[0].transform.position.x + movementValue,0,0);
+        foreach (Tile t in tiles)
+            t.MouvementLateral(movementValue);
     }
 }

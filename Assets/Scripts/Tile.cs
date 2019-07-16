@@ -27,10 +27,13 @@ public class Tile : MonoBehaviour
             Destroy(gameObject);
     }
 
+    public void MouvementLateral(float movementValue)
+    {
+        transform.position = new Vector3(transform.position.x + movementValue, transform.position.y, transform.position.z);
+    }
+
     void OnDestroy()
     {
-    	GameManager.levelManager.SupprChild(this);
-        if (transform.position.x == 0)
-            GameManager.generationProcedurale.NewTile();
+        GameManager.levelManager.SupprChild(this);
     }
 }
