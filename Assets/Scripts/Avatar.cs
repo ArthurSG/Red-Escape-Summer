@@ -29,6 +29,12 @@ public class Avatar : MonoBehaviour
     // Entre en contact avec un Collider
     public void Touche()
     {
+        GameManager.instance.PlayerDied();
         transform.GetChild(1).gameObject.SetActive(false);
+    }
+
+    public void GameStarted()
+    {
+        transform.GetChild(1).gameObject.SetActive(true);
     }
 }
