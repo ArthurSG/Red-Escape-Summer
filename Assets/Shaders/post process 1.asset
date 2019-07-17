@@ -18,19 +18,19 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.4
+    value: 3.89
   threshold:
     overrideState: 1
-    value: 1
+    value: 1.97
   softKnee:
     overrideState: 1
-    value: 0.259
+    value: 0.234
   clamp:
     overrideState: 0
     value: 65472
   diffusion:
     overrideState: 1
-    value: 6.62
+    value: 3.68
   anamorphicRatio:
     overrideState: 1
     value: 0
@@ -59,12 +59,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb84e30e02715445aeb9959894e3b4d, type: 3}
   m_Name: ColorGrading
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
   gradingMode:
-    overrideState: 0
+    overrideState: 1
     value: 1
   externalLut:
     overrideState: 0
@@ -99,26 +99,26 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   temperature:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 6
   tint:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -23
   colorFilter:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     overrideState: 0
-    value: 0
+    value: 14
   saturation:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -15.07
   brightness:
     overrideState: 0
     value: 0
   postExposure:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 0.72
   contrast:
     overrideState: 0
     value: 0
@@ -135,8 +135,8 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   mixerGreenOutGreenIn:
-    overrideState: 0
-    value: 100
+    overrideState: 1
+    value: 70
   mixerGreenOutBlueIn:
     overrideState: 0
     value: 0
@@ -150,11 +150,11 @@ MonoBehaviour:
     overrideState: 0
     value: 100
   lift:
-    overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    overrideState: 1
+    value: {x: 0.7062099, y: 1, z: 0.7084894, w: -0.5034325}
   gamma:
-    overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    overrideState: 1
+    value: {x: 1, y: 0.031459272, z: 0.05516902, w: 0}
   gain:
     overrideState: 0
     value: {x: 1, y: 1, z: 1, w: 0}
@@ -1380,7 +1380,7 @@ MonoBehaviour:
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.72
+    value: 0.239
   fastMode:
     overrideState: 0
     value: 0
@@ -1402,7 +1402,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: -51
+    value: -14
   intensityX:
     overrideState: 1
     value: 1
@@ -1410,14 +1410,14 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   centerX:
-    overrideState: 1
-    value: 0
+    overrideState: 0
+    value: -0.03
   centerY:
-    overrideState: 1
+    overrideState: 0
     value: 0
   scale:
-    overrideState: 1
-    value: 1
+    overrideState: 0
+    value: 0.01
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
