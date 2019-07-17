@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{aa07a4da-0646-4e48-9590-94945d9d3bb1}">
+        <property name="assetPath">
+            <value>Moteur.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>3.6923129251700679</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{96d00fcc-b421-43d2-8aea-4b35ae6f5573}</destination>
+        </relationship>
+    </object>
+</objects>
