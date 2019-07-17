@@ -2,19 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControllerListenerKeyboard : MonoBehaviour
+public class AnimationShip : MonoBehaviour
 {
-	public float movementValue;
-
+    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-
+    // Update is called once per frame
     void Update()
     {
-    	movementValue = Input.GetAxis("Horizontal");
         
     }
 }

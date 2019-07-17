@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tile : MonoBehaviour
+public class Avatar : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        GameManager.levelManager.AddChild(this);
+        
     }
 
     // Update is called once per frame
@@ -16,8 +16,8 @@ public class Tile : MonoBehaviour
         
     }
 
-    void OnDestroy()
+    public void SideMovement(float movementValue)
     {
-    	GameManager.levelManager.SupprChild(this);
+    	transform.position = new Vector3(transform.position.x + movementValue, transform.position.y, transform.position.z);
     }
 }
