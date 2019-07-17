@@ -4,20 +4,31 @@ using UnityEngine;
 
 public class Avatar : MonoBehaviour
 {
+    Rigidbody rig;
+    float movementValue = 0;
+    public float vitesseLaterale;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rig = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        rig.velocity = new Vector3(movementValue, 0, 0);
     }
 
-    public void SideMovement(float movementValue)
+    public void SideMovement(float input)
     {
-    	transform.position = new Vector3(transform.position.x + movementValue, transform.position.y, transform.position.z);
+        movementValue = input * vitesseLaterale;
+    }
+
+
+    // Entre en contact avec un Collider
+    public void Touche()
+    {
+        transform.GetChild(1).gameObject.SetActive(false);
     }
 }

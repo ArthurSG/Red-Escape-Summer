@@ -13,15 +13,11 @@ public class MovementController : MonoBehaviour
 
     void Start()
     {
-    	levelManager = GetComponent<LevelManager>();
-        tiles = levelManager.tiles;
-
-        if (GameManager.instance != null)
-            ResetAvatar();
+    	   
     }
     void FixedUpdate ()
     {
-        tiles = levelManager.tiles;
+    
 
         if (GameManager.instance != null)
         {

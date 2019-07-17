@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     //public static MovementController movementController;
 
     public static GenerationProcedurale generationProcedurale;
+	public static ControllerListener controllerListener;
     
     void Start() 
     {
