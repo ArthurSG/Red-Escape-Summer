@@ -8,9 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ground_wire
-  m_Shader: {fileID: 4800000, guid: f401abcbff400b047976dcdabbf1e0cd, type: 3}
-  m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 1
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -75,6 +75,6 @@ Material:
     - _WireframeVal: 0.49
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 7.9066987, g: 0.8837646, b: 0.12418876, a: 1}
+    - _Color: {r: 0.4056604, g: 0.12021516, b: 0.112896055, a: 1}
     - _ColorFace: {r: 0.4339623, g: 0.14871918, b: 0.01842292, a: 0.57254905}
     - _EmissionColor: {r: 0.65716666, g: 0.50451773, b: 0.4268996, a: 1}

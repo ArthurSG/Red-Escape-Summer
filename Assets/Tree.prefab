@@ -702,10 +702,10 @@ Material:
     - _Cutoff: 0.3
     - _SquashAmount: 1
     - _WireframeMask: 0.036
-    - _WireframeVal: 9.13
+    - _WireframeVal: 0.14
     m_Colors:
-    - _Color: {r: 10.432951, g: 0, b: 0, a: 1}
-    - _ColorFace: {r: 16, g: 0, b: 0, a: 0.23921569}
+    - _Color: {r: 10.432951, g: 9.736773, b: 0, a: 1}
+    - _ColorFace: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
