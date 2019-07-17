@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public static LevelManager levelManager;
     public static Fabrique fabrique;
+    public GameObject Avatar;
+    public int a = 0;
     //public static MovementController movementController;
 
     public static GenerationProcedurale generationProcedurale;
@@ -25,7 +27,5 @@ public class GameManager : MonoBehaviour
 
         generationProcedurale = GetComponent<GenerationProcedurale>();
 
-
     }
-
 }

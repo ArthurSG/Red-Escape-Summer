@@ -15,9 +15,8 @@ public class ControllerListener : MonoBehaviour
 
     void Update()
     {
-    	movementValue = - Input.GetAxis("Horizontal");
-    	print (movementValue);
-
+    	movementValue = Input.GetAxis("Horizontal");
+    	
     	movementController.Movement(movementValue);
         
     }
