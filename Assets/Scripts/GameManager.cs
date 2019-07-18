@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject avatar;
     public float maxSpeed = 2.4f, minSpeed = 2f;
     public float accelerationTime = 1f;
-    public float speed = 2f;
+    float speed = 1f;
     Avatar avatarScript;
     public Text scoreText, scoreTextShadow;
 
@@ -66,20 +66,20 @@ public class GameManager : MonoBehaviour
     }
 
     public void UpdateSpeed() {
-        // if(avatarScript != null && avatarScript.IsAccelerating())
-        //     Mathf.SmoothDamp(speed, maxSpeed, ref speed, accelerationTime);
-        // else
-        //     Mathf.SmoothDamp(speed, minSpeed, ref speed, accelerationTime);
+        if(avatarScript != null && avatarScript.IsAccelerating())
+            Mathf.SmoothDamp(speed, maxSpeed, ref speed, accelerationTime);
+        else
+            Mathf.SmoothDamp(speed, minSpeed, ref speed, accelerationTime);
     }
 
     void FetchComponents() {
     	levelManager = GetComponent<LevelManager>();
     	tilePool = GetComponent<TilePool>();
-        avatarScript = GetComponent<Avatar>();
+        avatarScript = avatar.GetComponent<Avatar>();
     }
 
     public float GetSpeed() {
-        return speed;
+        return speed * 2;
     }
     void CreateSingletonInstance() {
     	if (instance != null) 
