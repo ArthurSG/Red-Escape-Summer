@@ -1209,6 +1209,11 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 7021323833409920978, guid: e253fb0df845f2e498b42f6b5aadcb3a,
+        type: 3}
+      propertyPath: maxFov
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6191306423563532021, guid: e253fb0df845f2e498b42f6b5aadcb3a,
         type: 3}
       propertyPath: m_IsTrigger
