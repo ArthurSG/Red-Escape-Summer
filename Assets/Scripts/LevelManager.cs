@@ -17,7 +17,6 @@ public class LevelManager : MonoBehaviour
 
     string GetTileToSpawn()
     {
-        return "Random";
         if (GameManager.instance.IsGameRunning())
             return "Random";
         else return "Default";

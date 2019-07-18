@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
     public string gameSceneName = "main";
     public static MenuManager instance;
     public GameObject startingMenuPage;
+    public GameObject endGameMenuPage;
     private MenuPage currentlyActiveMenuPage;
     // Start is called before the first frame update
     void Start() {
@@ -52,5 +53,9 @@ public class MenuManager : MonoBehaviour
     // Lance le jeu en changeant de scène
     public void Play() {
         SceneManager.LoadSceneAsync(gameSceneName);
+    }
+
+    public void DisplayEndGame() {
+        SwapUIMenu(endGameMenuPage.GetComponent<MenuPage>());
     }
 }
