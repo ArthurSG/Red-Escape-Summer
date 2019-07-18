@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     {
         CreateSingletonInstance();
         FetchComponents();
+        
     }
 
     void Update() {
@@ -65,10 +66,10 @@ public class GameManager : MonoBehaviour
     }
 
     public void UpdateSpeed() {
-        if(avatarScript.IsAccelerating())
-            Mathf.SmoothDamp(speed, maxSpeed, ref speed, accelerationTime);
-        else
-            Mathf.SmoothDamp(speed, minSpeed, ref speed, accelerationTime);
+        // if(avatarScript != null && avatarScript.IsAccelerating())
+        //     Mathf.SmoothDamp(speed, maxSpeed, ref speed, accelerationTime);
+        // else
+        //     Mathf.SmoothDamp(speed, minSpeed, ref speed, accelerationTime);
     }
 
     void FetchComponents() {

@@ -60,7 +60,12 @@ MonoBehaviour:
   levelManager: {fileID: 8025713161467220564}
   tilePool: {fileID: 8025713161467220566}
   avatar: {fileID: 0}
-  vitesse: 1
+  maxSpeed: 2.4
+  minSpeed: 2
+  accelerationTime: 1
+  speed: 2
+  scoreText: {fileID: 0}
+  scoreTextShadow: {fileID: 0}
 --- !u!114 &8025713161467220566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,3 +82,6 @@ MonoBehaviour:
   - {fileID: 7564494586716164986, guid: 57a988d1695e63f429949832e9c1cbbe, type: 3}
   - {fileID: 622264203108968682, guid: 248ad5cd9b5736848b3dc37d5f1ce592, type: 3}
   - {fileID: 7695155546872040663, guid: 247be178b10309f4ba9cfe3b29b83ee9, type: 3}
+  - {fileID: 622264203108968682, guid: e219c1c14824d684dbf1a2d245867542, type: 3}
+  - {fileID: 7564494586716164986, guid: 3715993c177df554b8cb3a1bf94d45b5, type: 3}
+  - {fileID: 7564494586716164986, guid: ea0c56c45c6d35847a178d0bc4c43715, type: 3}
