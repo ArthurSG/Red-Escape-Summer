@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4293415224816469633}
   - component: {fileID: 4468127568126685641}
   m_Layer: 0
-  m_Name: Lv0_Brick1
+  m_Name: Lv1_Brick1
   m_TagString: tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,7 +148,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 44723151b4aac4a4da16a5a6295394e7, type: 2}
+  - {fileID: 2100000, guid: f1d637f5dc4e37b40b94aea9a03b4a85, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
