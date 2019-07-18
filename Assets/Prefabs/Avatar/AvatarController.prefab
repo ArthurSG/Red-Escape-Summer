@@ -338,7 +338,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18e01eeb03a7cde458747fbc3dffd5b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesseLaterale: 40
+  movementInput: 0
+  lateralSpeed: 0
+  lateralSpeedSensitivity: 1
+  maxLateralSpeed: 150
 --- !u!54 &4577141820071909667
 Rigidbody:
   m_ObjectHideFlags: 0
