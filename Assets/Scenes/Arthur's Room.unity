@@ -10298,56 +10298,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 659938814, guid: e253fb0df845f2e498b42f6b5aadcb3a, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 659938814, guid: e253fb0df845f2e498b42f6b5aadcb3a, type: 3}
-      propertyPath: InitialModule.size3D
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 659938814, guid: e253fb0df845f2e498b42f6b5aadcb3a, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.7411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 659938814, guid: e253fb0df845f2e498b42f6b5aadcb3a, type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 659938813, guid: e253fb0df845f2e498b42f6b5aadcb3a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1b20c6074cfae5b488430c284a6d48bc, type: 2}
-    - target: {fileID: 983803925818844433, guid: e253fb0df845f2e498b42f6b5aadcb3a,
-        type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 983803925818844433, guid: e253fb0df845f2e498b42f6b5aadcb3a,
-        type: 3}
-      propertyPath: InitialModule.size3D
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 983803925818844433, guid: e253fb0df845f2e498b42f6b5aadcb3a,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.75686276
-      objectReference: {fileID: 0}
-    - target: {fileID: 983803925818844433, guid: e253fb0df845f2e498b42f6b5aadcb3a,
-        type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 7289719565434103769, guid: e253fb0df845f2e498b42f6b5aadcb3a,
-        type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7289719565434103769, guid: e253fb0df845f2e498b42f6b5aadcb3a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1b20c6074cfae5b488430c284a6d48bc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e253fb0df845f2e498b42f6b5aadcb3a, type: 3}
 --- !u!4 &127763295286234790
