@@ -120,6 +120,62 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &179230740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 179230741}
+  - component: {fileID: 179230742}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &179230741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179230740}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 36.141945, y: 39.786514, z: 83.43744}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &179230742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179230740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Ambiance
+  PlayEvent: 1
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: Frolement
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &242767634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,6 +1351,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2125707117216657941, guid: e253fb0df845f2e498b42f6b5aadcb3a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2125707116801221529, guid: e253fb0df845f2e498b42f6b5aadcb3a,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
@@ -1354,11 +1415,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RenderMode
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2125707117216657941, guid: e253fb0df845f2e498b42f6b5aadcb3a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2125707117216657936, guid: e253fb0df845f2e498b42f6b5aadcb3a,
         type: 3}
@@ -1420,8 +1476,57 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4577141821021971274, guid: e253fb0df845f2e498b42f6b5aadcb3a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e253fb0df845f2e498b42f6b5aadcb3a, type: 3}
+--- !u!1 &1190082310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7978664266135789627, guid: e253fb0df845f2e498b42f6b5aadcb3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1190082309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1190082311 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4577141821021971275, guid: e253fb0df845f2e498b42f6b5aadcb3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1190082309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1190082312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190082310}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Moteur
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 2.29
+  OverrideMaxDistance: 14.14
+--- !u!114 &1190082313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190082311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: 0
 --- !u!1 &1196858453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2553,31 +2658,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: Avatar
-      value: 
-      objectReference: {fileID: 1184948051}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: avatar
-      value: 
-      objectReference: {fileID: 1184948051}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: vitesse
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: scoreText
-      value: 
-      objectReference: {fileID: 1820356622}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: scoreTextShadow
-      value: 
-      objectReference: {fileID: 472093597}
     - target: {fileID: 8025713161467220565, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2633,6 +2713,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: Avatar
+      value: 
+      objectReference: {fileID: 1184948051}
+    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: avatar
+      value: 
+      objectReference: {fileID: 1184948051}
+    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: vitesse
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1820356622}
+    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: scoreTextShadow
+      value: 
+      objectReference: {fileID: 472093597}
     - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
         type: 3}
       propertyPath: Avatar
