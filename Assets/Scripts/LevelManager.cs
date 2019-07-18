@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour
     public void TileArrived(GameObject tileArrived)
     {
         string tileType = GetTileToSpawn();
-        TilePool.instance.SpawnTileRow(tileType, tileArrived.transform.position);
+        TilePool.instance.SpawnTileRow(tileType, tileArrived.transform.parent.position);
     }
 
     string GetTileToSpawn()

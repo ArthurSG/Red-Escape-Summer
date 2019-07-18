@@ -35,7 +35,7 @@ public class TilePool : MonoBehaviour
 
                 if (j < NOMBRE_DE_TILE_LONG)
                 {
-                    tile.transform.position = new Vector3((- NOMBRE_DE_TILE_LARGE / 2 + i) * Tile.LARGEUR_TILE, 0, j * Tile.LONGUEUR_TILE);
+                    tile.transform.position = new Vector3((- NOMBRE_DE_TILE_LARGE / 2 + i) * Tile.LARGEUR_TILE, 0, (j  + 0.6f) * Tile.LONGUEUR_TILE);
                 }
                 else
                 {
