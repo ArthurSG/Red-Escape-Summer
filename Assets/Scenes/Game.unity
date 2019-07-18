@@ -1416,6 +1416,18 @@ PrefabInstance:
       propertyPath: volumeTrigger
       value: 
       objectReference: {fileID: 432371093}
+    - target: {fileID: 1190082316, guid: e253fb0df845f2e498b42f6b5aadcb3a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190082315, guid: e253fb0df845f2e498b42f6b5aadcb3a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190082314, guid: e253fb0df845f2e498b42f6b5aadcb3a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e253fb0df845f2e498b42f6b5aadcb3a, type: 3}
 --- !u!1 &1196858453
