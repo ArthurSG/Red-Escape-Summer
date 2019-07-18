@@ -88,4 +88,9 @@ public class GameManager : MonoBehaviour
     	}
     	instance = this;
     }
+
+    public float GetScore()
+    {
+        return score;
+    }
 }

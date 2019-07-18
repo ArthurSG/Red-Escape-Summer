@@ -43,7 +43,7 @@ public class Avatar : MonoBehaviour
 
     public void GameStarted()
     {
-        transform.GetChild(1).gameObject.SetActive(true);
+        // transform.GetChild(1).gameObject.SetActive(true);
         animator.SetBool("Dead", false);
     }
 
@@ -54,7 +54,7 @@ public class Avatar : MonoBehaviour
 
     void Died() {
         GameManager.instance.PlayerDied();
-        transform.GetChild(1).gameObject.SetActive(false);
+        // transform.GetChild(1).gameObject.SetActive(false);
         animator.SetBool("Dead", true);
     }
 

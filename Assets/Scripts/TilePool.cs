@@ -4,24 +4,30 @@ using UnityEngine;
 
 public class TilePool : MonoBehaviour
 {
+    public static TilePool instance;
+
     private int NOMBRE_DE_TILE_LARGE = 10;           // nombre de tiles à instancier sur une même ligne
     private int NOMBRE_DE_TILE_LONG = 5;           // nombre de tiles instenciées sur la longueur 
 
-    public List<GameObject> tilePrefabs;            //Première -> tile par défaut (aucun obstacle)
+    public List<GameObject> defaultPrefabs;
+    public List<GameObject> forestPrefabs;
+    public List<GameObject> rocksPrefabs;    
 
-    List<Tile> poolRandomTile;
+
+    List<Tile> poolForestTile;
+    List<Tile> poolRocksTile;
     List<Tile> poolDefaultTile;
-
-    public static TilePool instance;
-
+    
     void Start()
     {
         CreateInstance();
 
-        poolRandomTile = new List<Tile>();
+        poolRocksTile = new List<Tile>();
         poolDefaultTile = new List<Tile>();
+        poolForestTile = new List<Tile>();
         SpawnDefaultTiles();
-        SpawnRandomTiles();
+        SpawnRocksTiles();
+        SpawnForestTiles();
     }
 
     void SpawnDefaultTiles()
@@ -30,7 +36,7 @@ public class TilePool : MonoBehaviour
         {
             for (int i = 0; i < NOMBRE_DE_TILE_LARGE; i++)
             {
-                GameObject tile = Instantiate(tilePrefabs[0]);
+                GameObject tile = Instantiate(defaultPrefabs[0]);
                 tile.GetComponent<Tile>().tileType = "Default";
 
                 if (j < NOMBRE_DE_TILE_LONG)
@@ -46,19 +52,33 @@ public class TilePool : MonoBehaviour
 
     }
 
-    void SpawnRandomTiles()
+    void SpawnRocksTiles()
     {
         int tilesToSpawn = NOMBRE_DE_TILE_LARGE * (NOMBRE_DE_TILE_LONG + 5);
-        while (poolRandomTile.Count < tilesToSpawn)
+        while (poolRocksTile.Count < tilesToSpawn)
         {
-            for (int i = 0; i < tilePrefabs.Count; ++i)
+            for (int i = 0; i < rocksPrefabs.Count; ++i)
             {
-                GameObject tile = Instantiate(tilePrefabs[i]);
+                GameObject tile = Instantiate(rocksPrefabs[i]);
+                tile.GetComponent<Tile>().tileType = "Rocks";
                 RegisterTile(tile.GetComponent<Tile>());
             }
         }
     }
 
+    void SpawnForestTiles()
+    {
+        int tilesToSpawn = NOMBRE_DE_TILE_LARGE * (NOMBRE_DE_TILE_LONG + 5);
+        while (poolForestTile.Count < tilesToSpawn)
+        {
+            for (int i = 0; i < forestPrefabs.Count; ++i)
+            {
+                GameObject tile = Instantiate(forestPrefabs[i]);
+                tile.GetComponent<Tile>().tileType = "Forest";
+                RegisterTile(tile.GetComponent<Tile>());
+            }
+        }
+    }
 
     private void CreateInstance() {
         if (instance != null)
@@ -85,8 +105,10 @@ public class TilePool : MonoBehaviour
         tile.gameObject.SetActive(false);
         tile.gameObject.transform.position = Vector3.one * 1000;
 
-        if (tile.tileType == "Random")
-            poolRandomTile.Add(tile);
+        if (tile.tileType == "Rocks")
+            poolRocksTile.Add(tile);
+        else if (tile.tileType == "Forest")
+            poolForestTile.Add(tile);
         else poolDefaultTile.Add(tile);
     }
 
@@ -95,12 +117,21 @@ public class TilePool : MonoBehaviour
         Tile tile = null;
 
        
-        if (tileType == "Random")
+        if (tileType == "Rocks")
         {
-            int index = Random.Range(0, poolRandomTile.Count);
+            int index = Random.Range(0, poolRocksTile.Count);
 
-            tile = poolRandomTile[index];
-            poolRandomTile.RemoveAt(index);
+            tile = poolRocksTile[index];
+            poolRocksTile.RemoveAt(index);
+            return tile.gameObject;
+        }
+
+        if (tileType == "Forest")
+        {
+            int index = Random.Range(0, poolForestTile.Count);
+
+            tile = poolForestTile[index];
+            poolForestTile.RemoveAt(index);
             return tile.gameObject;
         }
 
