@@ -10,7 +10,7 @@ Material:
   m_Name: SUN 1
   m_Shader: {fileID: 4800000, guid: 36bfb6478a78a154cab1b99bcd4903cc, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _ALPHAPREMULTIPLY_ON
-  m_LightmapFlags: 0
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: b3d940e75e1f5d24684cd93a2758e1bf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -64,6 +64,8 @@ Material:
     - _Amount: 10
     - _Amount_Add: 12.3
     - _BumpScale: 1
+    - _Circle1: 3.37
+    - _Circle2: 0.94
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
@@ -71,13 +73,15 @@ Material:
     - _F_Bias: 0.13
     - _F_Power: 0
     - _F_Scale: 1.04
+    - _Float10: -3.79
+    - _Float9: 3.12
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 3
     - _OcclusionStrength: 1
-    - _Opacity: 5.774115
+    - _Opacity: 7.2
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -90,6 +94,8 @@ Material:
     m_Colors:
     - _ASEOutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
-    - _Color0: {r: 0.04009434, g: 0.010023585, b: 0, a: 1}
+    - _Color0: {r: 0.063, g: 0.015634693, b: 0, a: 1}
+    - _Color1: {r: 0.7490196, g: 0.7137255, b: 0, a: 0}
+    - _Color2: {r: 48.502926, g: 0.000011660365, b: 0, a: 1}
     - _ColorFace: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 6.0628657, g: 0, b: 0, a: 1}
