@@ -11,7 +11,7 @@ Material:
   m_Shader: {fileID: 4800000, guid: 36bfb6478a78a154cab1b99bcd4903cc, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _ALPHAPREMULTIPLY_ON
   m_LightmapFlags: 0
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -68,16 +68,16 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
     - _EdgeLength: 10.6
-    - _F_Bias: 0
+    - _F_Bias: 0.13
     - _F_Power: 0
-    - _F_Scale: 1
+    - _F_Scale: 1.04
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 3
     - _OcclusionStrength: 1
-    - _Opacity: 1.45
+    - _Opacity: 5.774115
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
