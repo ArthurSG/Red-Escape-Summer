@@ -62,4 +62,8 @@ public class Avatar : MonoBehaviour
         lateralSpeed = Mathf.Max(lateralSpeed, -maxLateralSpeed);
         lateralSpeed = Mathf.Min(lateralSpeed, maxLateralSpeed);
     }
+
+    public bool IsAccelerating() {
+        return movementInput == 0;
+    }
 }

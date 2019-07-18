@@ -12,7 +12,7 @@ public class Tile : MonoBehaviour
     void FixedUpdate()
     {
         //Move backwards
-        this.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - GameManager.instance.vitesse);
+        this.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - GameManager.instance.GetSpeed());
 
         //If i'm too far behind, destroy
         if (transform.position.z <= -LONGUEUR_TILE)

@@ -9,8 +9,10 @@ public class GameManager : MonoBehaviour
     public LevelManager levelManager;
     public TilePool tilePool;
     public GameObject avatar;
-    public float vitesse = 1f;
-
+    public float maxSpeed = 2.4f, minSpeed = 2f;
+    public float accelerationTime = 1f;
+    public float speed = 2f;
+    Avatar avatarScript;
     public Text scoreText, scoreTextShadow;
 
     private bool isGameRunning = false;
@@ -21,19 +23,14 @@ public class GameManager : MonoBehaviour
     
     void Start() 
     {
-    	if (instance != null) 
-    	{
-    		print("Multiples instances de game manager");
-    	}
-    	instance = this;
-
-    	levelManager = GetComponent<LevelManager>();
-    	tilePool = GetComponent<TilePool>();
+        CreateSingletonInstance();
+        FetchComponents();
     }
 
     void Update() {
         if (isGameRunning){
             UpdateScore();
+            UpdateSpeed();
         }
     }
     
@@ -65,5 +62,29 @@ public class GameManager : MonoBehaviour
         score += Time.deltaTime;
         scoreText.text = score.ToString("0");
         scoreTextShadow.text = score.ToString("0");
+    }
+
+    public void UpdateSpeed() {
+        if(avatarScript.IsAccelerating())
+            Mathf.SmoothDamp(speed, maxSpeed, ref speed, accelerationTime);
+        else
+            Mathf.SmoothDamp(speed, minSpeed, ref speed, accelerationTime);
+    }
+
+    void FetchComponents() {
+    	levelManager = GetComponent<LevelManager>();
+    	tilePool = GetComponent<TilePool>();
+        avatarScript = GetComponent<Avatar>();
+    }
+
+    public float GetSpeed() {
+        return speed;
+    }
+    void CreateSingletonInstance() {
+    	if (instance != null) 
+    	{
+    		print("Multiples instances de game manager");
+    	}
+    	instance = this;
     }
 }
