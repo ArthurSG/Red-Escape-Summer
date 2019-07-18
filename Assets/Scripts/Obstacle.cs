@@ -19,6 +19,6 @@ public class Obstacle : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        col.gameObject.GetComponent<Avatar>().Touche();
+        col.gameObject.GetComponentInParent<Avatar>().Touche();
     }
 }
