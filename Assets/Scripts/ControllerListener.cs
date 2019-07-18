@@ -21,13 +21,6 @@ public class ControllerListener : MonoBehaviour
 
     void Update()
     {  
-        print(pressedR);
-        print(pressedL);
-
-        /*if (Input.GetAxis("Horizontal") != 0)
-           movementValue = Input.GetAxis("Horizontal");
-        */
-
         movementValue = 0;
 
         if (pressedL)
