@@ -59,7 +59,7 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Distance: 21.89
+    - _Distance: 51.2
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -78,4 +78,4 @@ Material:
     - _Albedo: {r: 0.9716981, g: 0.91211283, b: 0.91211283, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Range: {r: 0, g: 0, b: 0, a: 0}
+    - _Range: {r: 10, g: 10, b: 0, a: 0}
