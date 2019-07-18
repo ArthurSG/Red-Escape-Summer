@@ -18,7 +18,11 @@ public class LevelManager : MonoBehaviour
     string GetTileToSpawn()
     {
         if (GameManager.instance.IsGameRunning())
-            return "Random";
+        {
+            if (GameManager.instance.GetScore() % 60 <= 30)
+                return "Forest";
+            else return "Rocks";
+        }
         else return "Default";
     }
 }
