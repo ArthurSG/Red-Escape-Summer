@@ -36,8 +36,7 @@ public class MovementController : MonoBehaviour
     }
 
     void ResetAvatar(){
-
-        ship = GameManager.instance.Avatar.GetComponent<Avatar>();
+        ship = GameManager.instance.avatar.GetComponent<Avatar>();
     }
 
     public void Movement (float movementValue)

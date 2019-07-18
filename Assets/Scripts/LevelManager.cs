@@ -4,34 +4,21 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-
-	public float size;
-	public List<Tile> tiles;
-
-
     void Start()
     {
-    	tiles = new List<Tile>();
+
     }
 
-    void Update()
+    public void TileArrived(GameObject tileArrived)
     {
-        
+        string tileType = GetTileToSpawn();
+        TilePool.instance.SpawnTileRow(tileType, tileArrived.transform.parent.position);
     }
 
-    public void AddChild (Tile t)
+    string GetTileToSpawn()
     {
-    	tiles.Add(t);
-    	print("tile ajoutée");
-    }
-
-    public void SupprChild(Tile t)
-    {
-    	foreach (Tile tile in tiles)
-    		if(tile == t){
-    			tiles.Remove(tile);
-    			print("tile spprimée");
-    			break;
-    		}
+        if (GameManager.instance.IsGameRunning())
+            return "Random";
+        else return "Default";
     }
 }
