@@ -12,8 +12,14 @@ public class CameraController : MonoBehaviour
     }
 
     void Update() {
-        float interpolation = (GameManager.instance.GetSpeed() - GameManager.instance.minSpeed) / GameManager.instance.maxSpeed;
-        cam.fieldOfView = Mathf.Lerp(minFov, maxFov, interpolation);
-        print(interpolation);
+        cam.fieldOfView = Mathf.Lerp(minFov, maxFov, GetInterpolation());
+    }
+
+    float GetInterpolation() {
+        float speed = GameManager.instance.GetSpeed();
+        float maxSpeed = GameManager.instance.maxSpeed;
+        float minSpeed = GameManager.instance.minSpeed;
+        return (speed - minSpeed) / (maxSpeed - minSpeed);
+
     }
 }

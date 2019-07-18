@@ -73,7 +73,7 @@ Material:
     - _F_Power: 0
     - _F_Scale: 0.3
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 2

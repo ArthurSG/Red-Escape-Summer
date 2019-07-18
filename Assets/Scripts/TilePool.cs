@@ -6,7 +6,7 @@ public class TilePool : MonoBehaviour
 {
     public static TilePool instance;
 
-    private int NOMBRE_DE_TILE_LARGE = 10;           // nombre de tiles à instancier sur une même ligne
+    private int NOMBRE_DE_TILE_LARGE = 13;         // nombre de tiles à instancier sur une même ligne
     private int NOMBRE_DE_TILE_LONG = 5;           // nombre de tiles instenciées sur la longueur 
 
     public List<GameObject> defaultPrefabs;
