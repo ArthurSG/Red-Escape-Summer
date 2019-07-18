@@ -1144,7 +1144,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 6404876476209336872, guid: e253fb0df845f2e498b42f6b5aadcb3a,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1210,8 +1209,6 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -5
       objectReference: {fileID: 0}
-=======
->>>>>>> 0270ff3dbfdc7157aaed002a1d709dd8725a64db
     - target: {fileID: 6191306423563532021, guid: e253fb0df845f2e498b42f6b5aadcb3a,
         type: 3}
       propertyPath: m_IsTrigger
@@ -2350,87 +2347,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
         type: 3}
-      propertyPath: defaultPrefabs.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: forestPrefabs.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: rocksPrefabs.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: defaultPrefabs.Array.data[0]
+      propertyPath: avatar
       value: 
-      objectReference: {fileID: 7564494586716164986, guid: 57a988d1695e63f429949832e9c1cbbe,
+      objectReference: {fileID: 1184948051}
+    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
         type: 3}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: forestPrefabs.Array.data[0]
+      propertyPath: scoreText
       value: 
-      objectReference: {fileID: 7564494586716164986, guid: 57a988d1695e63f429949832e9c1cbbe,
+      objectReference: {fileID: 1820356622}
+    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
         type: 3}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: forestPrefabs.Array.data[1]
+      propertyPath: scoreTextShadow
       value: 
-      objectReference: {fileID: 622264203108968682, guid: 248ad5cd9b5736848b3dc37d5f1ce592,
-        type: 3}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: forestPrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 7695155546872040663, guid: 247be178b10309f4ba9cfe3b29b83ee9,
-        type: 3}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: forestPrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 622264203108968682, guid: e219c1c14824d684dbf1a2d245867542,
-        type: 3}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: forestPrefabs.Array.data[4]
-      value: 
-      objectReference: {fileID: 7564494586716164986, guid: 3715993c177df554b8cb3a1bf94d45b5,
-        type: 3}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: forestPrefabs.Array.data[5]
-      value: 
-      objectReference: {fileID: 7564494586716164986, guid: ea0c56c45c6d35847a178d0bc4c43715,
-        type: 3}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: rocksPrefabs.Array.data[0]
-      value: 
-      objectReference: {fileID: 7564494586716164986, guid: 57a988d1695e63f429949832e9c1cbbe,
-        type: 3}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: rocksPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 7564494586716164986, guid: 33b743822c874f64886b4632b9f77ccf,
-        type: 3}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: rocksPrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 7564494586716164986, guid: 603ceacfe2bd01a47bb66fcc69d5ccf8,
-        type: 3}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: rocksPrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 7564494586716164986, guid: 96092320f3aa22c458478f300c462080,
-        type: 3}
+      objectReference: {fileID: 472093597}
     - target: {fileID: 8025713161467220565, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2486,20 +2417,86 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
         type: 3}
-      propertyPath: avatar
-      value: 
-      objectReference: {fileID: 1184948051}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+      propertyPath: defaultPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
         type: 3}
-      propertyPath: scoreText
-      value: 
-      objectReference: {fileID: 1820356622}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+      propertyPath: forestPrefabs.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
         type: 3}
-      propertyPath: scoreTextShadow
+      propertyPath: rocksPrefabs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: defaultPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 472093597}
+      objectReference: {fileID: 7564494586716164986, guid: 78b975f632ec52048937da5baf3bc72d,
+        type: 3}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: forestPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 7564494586716164986, guid: 57a988d1695e63f429949832e9c1cbbe,
+        type: 3}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: forestPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 622264203108968682, guid: 248ad5cd9b5736848b3dc37d5f1ce592,
+        type: 3}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: forestPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 7695155546872040663, guid: 247be178b10309f4ba9cfe3b29b83ee9,
+        type: 3}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: forestPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 622264203108968682, guid: e219c1c14824d684dbf1a2d245867542,
+        type: 3}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: forestPrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 7564494586716164986, guid: 3715993c177df554b8cb3a1bf94d45b5,
+        type: 3}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: forestPrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 7564494586716164986, guid: ea0c56c45c6d35847a178d0bc4c43715,
+        type: 3}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: rocksPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 7564494586716164986, guid: 33b743822c874f64886b4632b9f77ccf,
+        type: 3}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: rocksPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 7564494586716164986, guid: 603ceacfe2bd01a47bb66fcc69d5ccf8,
+        type: 3}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: rocksPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 7564494586716164986, guid: 96092320f3aa22c458478f300c462080,
+        type: 3}
+    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: rocksPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 7564494586716164986, guid: 57a988d1695e63f429949832e9c1cbbe,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f5dcfe4d2cc9b43a8babe535889e41, type: 3}
