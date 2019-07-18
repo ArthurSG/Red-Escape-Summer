@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TilePool : MonoBehaviour
 {
-    private int NOMBRE_DE_TILE_LARGE = 5;           // nombre de tiles à instancier sur une même ligne
-    private int NOMBRE_DE_TILE_LONG = 10;           // nombre de tiles instenciées sur la longueur 
+    private int NOMBRE_DE_TILE_LARGE = 10;           // nombre de tiles à instancier sur une même ligne
+    private int NOMBRE_DE_TILE_LONG = 5;           // nombre de tiles instenciées sur la longueur 
 
     public List<GameObject> tilePrefabs;            //Première -> tile par défaut (aucun obstacle)
 
@@ -82,7 +82,6 @@ public class TilePool : MonoBehaviour
 
     public void RegisterTile(Tile tile)
     {
-        print("oui");
         tile.gameObject.SetActive(false);
         tile.gameObject.transform.position = Vector3.one * 1000;
 
