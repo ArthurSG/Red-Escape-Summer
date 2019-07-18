@@ -19862,7 +19862,7 @@ MonoBehaviour:
     stationaryBlending: 0.704
     motionBlending: 0.889
   subpixelMorphologicalAntialiasing:
-    quality: 2
+    quality: 0
   fastApproximateAntialiasing:
     fastMode: 0
     keepAlpha: 0
@@ -19921,7 +19921,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4577141821021971275}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5cdba3576b630b4b99f5872b97392c7, type: 3}
   m_Name: 
@@ -30066,11 +30066,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightTrail (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2125707117728332397, guid: 642fcfccb2afb3341a0a7cc33decb007,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2125707117728332398, guid: 642fcfccb2afb3341a0a7cc33decb007,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30240,11 +30235,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LightTrail
-      objectReference: {fileID: 0}
-    - target: {fileID: 2125707117728332397, guid: 642fcfccb2afb3341a0a7cc33decb007,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2125707117728332398, guid: 642fcfccb2afb3341a0a7cc33decb007,
         type: 3}
@@ -30416,6 +30406,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sun
       objectReference: {fileID: 0}
+    - target: {fileID: 2577430579101571079, guid: bcc6d4a9c17c190419082c6efe1291b8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2577430579101571076, guid: bcc6d4a9c17c190419082c6efe1291b8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30486,6 +30481,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 16.319757
       objectReference: {fileID: 0}
+    - target: {fileID: 2577430580206524166, guid: bcc6d4a9c17c190419082c6efe1291b8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2577430578581421990, guid: bcc6d4a9c17c190419082c6efe1291b8,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -30500,6 +30500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.6442289
+      objectReference: {fileID: 0}
+    - target: {fileID: 2577430578581421984, guid: bcc6d4a9c17c190419082c6efe1291b8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcc6d4a9c17c190419082c6efe1291b8, type: 3}
