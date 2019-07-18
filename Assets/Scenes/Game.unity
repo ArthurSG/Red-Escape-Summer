@@ -2282,6 +2282,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: avatar
+      value: 
+      objectReference: {fileID: 1184948051}
+    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1820356622}
+    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
+        type: 3}
+      propertyPath: scoreTextShadow
+      value: 
+      objectReference: {fileID: 472093597}
     - target: {fileID: 8025713161467220565, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2337,70 +2352,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: Avatar
-      value: 
-      objectReference: {fileID: 1184948051}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: avatar
-      value: 
-      objectReference: {fileID: 1184948051}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: vitesse
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: scoreText
-      value: 
-      objectReference: {fileID: 1820356622}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: scoreTextShadow
-      value: 
-      objectReference: {fileID: 472093597}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: maxSpeed
-      value: 2.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: minSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220570, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: speed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: tilePrefabs.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: tilePrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 622264203108968682, guid: e219c1c14824d684dbf1a2d245867542,
-        type: 3}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: tilePrefabs.Array.data[4]
-      value: 
-      objectReference: {fileID: 7564494586716164986, guid: 3715993c177df554b8cb3a1bf94d45b5,
-        type: 3}
-    - target: {fileID: 8025713161467220566, guid: 00f5dcfe4d2cc9b43a8babe535889e41,
-        type: 3}
-      propertyPath: tilePrefabs.Array.data[5]
-      value: 
-      objectReference: {fileID: 7564494586716164986, guid: ea0c56c45c6d35847a178d0bc4c43715,
-        type: 3}
-    m_RemovedComponents:
-    - {fileID: 3428578380232473405, guid: 00f5dcfe4d2cc9b43a8babe535889e41, type: 3}
-    - {fileID: 3951007535149593487, guid: 00f5dcfe4d2cc9b43a8babe535889e41, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f5dcfe4d2cc9b43a8babe535889e41, type: 3}
