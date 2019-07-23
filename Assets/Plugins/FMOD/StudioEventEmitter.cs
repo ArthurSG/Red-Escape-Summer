@@ -26,7 +26,7 @@ namespace FMODUnity
         protected FMOD.Studio.EventInstance instance;
         public  FMOD.Studio.EventInstance EventInstance { get { return instance; } }
 
-        private bool hasTriggered = false;
+        public bool hasTriggered = false;
         private bool isQuitting = false;
         private bool isOneshot = false;
 

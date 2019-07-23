@@ -11,7 +11,9 @@ public class GameManager : MonoBehaviour
     public GameObject avatar;
     public float maxSpeed = 2.4f, minSpeed = 2f;
     public float accelerationTime = 1f;
-    float speed = 1f;
+    public float deccelerationTime = 1;
+    //[HideInInspector]
+    public float speed = 1f;
     Avatar avatarScript;
     public Text scoreText, scoreTextShadow;
 
@@ -66,10 +68,13 @@ public class GameManager : MonoBehaviour
     }
 
     public void UpdateSpeed() {
-        if(avatarScript != null && avatarScript.IsAccelerating())
-            Mathf.SmoothDamp(speed, maxSpeed, ref speed, accelerationTime);
+        if (avatarScript == null) return;
+
+        if(avatarScript.IsAccelerating())
+            speed = Mathf.MoveTowards(speed, maxSpeed, accelerationTime * Time.deltaTime);
         else
-            Mathf.SmoothDamp(speed, minSpeed, ref speed, accelerationTime);
+            speed = Mathf.MoveTowards(speed, minSpeed, deccelerationTime * Time.deltaTime);
+        //Debug.Log(speed);
     }
 
     void FetchComponents() {

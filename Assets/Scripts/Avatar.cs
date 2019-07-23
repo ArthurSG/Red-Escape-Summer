@@ -64,6 +64,7 @@ public class Avatar : MonoBehaviour
     }
 
     public bool IsAccelerating() {
-        return movementInput == 0;
+        //Debug.Log(movementInput);
+        return movementInput != 0;
     }
 }
